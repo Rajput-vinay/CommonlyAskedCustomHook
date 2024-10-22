@@ -12,8 +12,8 @@ A hook for fetching data from an API.
 - Returns the fetched `data`, `loading` state, and `error` state.
 - Example use case: Fetching user data or list of items from a server.
 
-```javascript
-const { data, loading, error } = useFetch('https://api.example.com/data');
+   ```javascript
+   const { data, loading, error } = useFetch('https://api.example.com/data');
 
 ### 2. `useDebounce(value, delay)`
 A hook that returns a debounced value after a specified delay.
@@ -22,8 +22,8 @@ A hook that returns a debounced value after a specified delay.
 - Delays the update of a value by a given delay (in milliseconds).
 - Useful for reducing the frequency of function calls (e.g., API requests) during rapid changes (like typing).
 
-```javascript
-const debouncedSearchTerm = useDebounce(searchTerm, 500);
+   ```javascript
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
 ### 3. `usePrev(value)`
 A hook to get the previous value of a state or prop.
@@ -32,8 +32,8 @@ A hook to get the previous value of a state or prop.
 - Stores the previous value across renders.
 - Helpful in comparing the current value with the previous one.
 
-```javascript
-const prevCount = usePrev(count);
+  ```javascript
+  const prevCount = usePrev(count);
 
 
 ## How to Use
