@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Counter from './Counter'
+import { useIsOnline } from './hooks/useIsOnline'
 
 function App() {
- 
+  const {online} = useIsOnline()
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+
+      <h1>Your status 
+      {
+        online ? (<div>Your are online</div>) : (<div>Your are offline</div>)
+      }
+      </h1>
     </>
   )
 }
